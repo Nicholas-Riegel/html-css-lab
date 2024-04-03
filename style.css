@@ -1,0 +1,70 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0 5px;
+    padding: 0 3px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+#nav-1 button, #nav-2 button{
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+#nav-3 button, #nav-4 button {
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: black;
+}
+
+/* I got the below from chatGPT after asking it to center the midle item when the nav display was flex and justify-content was space between. It initially suggested: 
+.nav-item:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+But that didn't work right. So I clarified.
+I believe the :nth-child(2) gets the second child of the parent element, which in this case is nav-4. The position absolute takes it out of the normal order. the left: 50% moves the item 50% from the left, but since this is too far, you have to move it back to the left by half of the elements (h4) width */
+#nav-4 h4:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nav-4{
+    padding: 15px 40px;
+}
