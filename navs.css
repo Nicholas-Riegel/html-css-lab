@@ -44,6 +44,11 @@ div {
     background-color: white;
 }
 
+#nav-1 ul:nth-child(2){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 #nav-3 button, #nav-4 button {
     color: white;
     border: 1px solid black;
