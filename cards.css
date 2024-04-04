@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: rgb(228, 221, 221);
+}
+
 header{
     display: flex;
     align-items: center;
@@ -32,6 +36,7 @@ main > div {
     border: 1px solid black;
     height: 600px;
     width: 350px;
+    background-color: white;
 }
 
 #top {
@@ -62,4 +67,64 @@ main > div {
 #bottom > div {
     position: absolute;
     bottom: 0;
+}
+
+#card-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#card-2 button {
+    position: absolute;
+    bottom: 2rem;
+    padding: .7rem 3rem;
+}
+
+#circle {
+    background-color: black;
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+#card-2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#card-2 li {
+    margin-bottom: 1rem;
+    opacity: .4;
+}
+
+#card-2 h1 {
+    margin-bottom: 0;
+}
+
+#card-3 .top {
+    background-color: black;
+    height: 70%;
+}
+
+#card-3 .bottom {
+    position: relative;
+    height: 30%;
+    padding: 5px 20px;
+}
+
+#card-3 h3{
+    font-size: 23px;
+    font-weight: 100;
+}
+
+#card-4 p{
+    position: absolute;
+    bottom: 0px;
+}
+
+#card-3 *{
+    
 }
